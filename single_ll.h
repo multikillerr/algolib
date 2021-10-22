@@ -40,6 +40,14 @@ void printList(){
     printf("[NULL]\t");
     while(ptr->link!=NULL){
         printf("%d\t",ptr->data);
+        ptr=ptr->link;
     }
     printf("[NULL]\t");
+    printf("\n");
+}
+
+void firstDelete(){
+    struct Node *ptr=head;
+    head=head->link;
+    free(ptr);
 }

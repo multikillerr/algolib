@@ -5,4 +5,6 @@ int main(void){
         beginsert(i);
     }
     printList();
+    firstDelete();
+    printList();
 }
