@@ -51,3 +51,12 @@ void firstDelete(){
     head=head->link;
     free(ptr);
 }
+
+void lastDelete(){
+    struct Node *ptr=head;
+    while(ptr->link->link!=NULL){
+        ptr=ptr->link;
+    }
+    free(ptr->link);
+    ptr->link=NULL;
+}
