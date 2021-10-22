@@ -7,4 +7,9 @@ int main(void){
     printList();
     firstDelete();
     printList();
+    lastDelete();
+    insertAfter(20,5);
+    printList();
+    midDelete(6);
+    printList();
 }

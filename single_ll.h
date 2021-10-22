@@ -24,7 +24,7 @@ void lastInsert(int data){
     node->link=NULL;
 }
 
-void midInsert(int data, int pivot){
+void insertAfter(int data, int pivot){
     struct Node *node = (struct Node *)malloc(sizeof(struct Node *));
     struct Node *ptr=head;
     while(ptr->data!=pivot){
@@ -60,3 +60,19 @@ void lastDelete(){
     free(ptr->link);
     ptr->link=NULL;
 }
+
+void midDelete(int pivot){
+    struct Node *ptr=head;
+    while(ptr->link->data!=pivot){
+        ptr=ptr->link;
+    }
+    //temp->link=ptr;
+    ptr->link=ptr->link->link;
+    //free(temp);
+}
+
+// int inserthelper(int data){
+//     if(head==NULL){
+        
+//     }
+// }
