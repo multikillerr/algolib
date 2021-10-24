@@ -76,3 +76,14 @@ void midDelete(int pivot){
         
 //     }
 // }
+
+struct Node *listreverse(struct Node *current){
+    struct Node *prev=NULL,*next=NULL;
+    while(current){
+        next=current->link;
+        current->link=prev;
+        prev=current;
+        current=next;
+    }
+    return prev;
+}

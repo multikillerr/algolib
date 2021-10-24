@@ -3,13 +3,15 @@
 int main(void){
     for (int i=0;i<=15;i++){
         beginsert(i);
+        printList();
     }
+    head=listreverse(head);
     printList();
-    firstDelete();
     printList();
-    lastDelete();
-    insertAfter(20,5);
-    printList();
-    midDelete(6);
-    printList();
+
+    for(int i=0;i<15;i++){
+        lastDelete();
+        printList();
+    }
+    
 }
