@@ -87,3 +87,12 @@ struct Node *listreverse(struct Node *current){
     }
     return prev;
 }
+struct Node * head;
+void listreverseRecursive(struct Node *prev,struct Node *current){
+    if(current){
+        listreverseRecursive(current,current->link);
+        current->link=prev;
+    }
+    else 
+        head=prev;
+}

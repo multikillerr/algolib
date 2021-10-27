@@ -9,6 +9,8 @@ int main(void){
     printList();
     printList();
 
+    listreverseRecursive(NULL,head);
+    printList();   
     for(int i=0;i<15;i++){
         lastDelete();
         printList();
