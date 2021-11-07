@@ -71,12 +71,6 @@ void midDelete(int pivot){
     //free(temp);
 }
 
-// int inserthelper(int data){
-//     if(head==NULL){
-        
-//     }
-// }
-
 struct Node *listreverse(struct Node *current){
     struct Node *prev=NULL,*next=NULL;
     while(current){
