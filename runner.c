@@ -1,5 +1,4 @@
 #include "single_linked_list.h"
-#include "B_Tree.h"
 //For the moment this only handles integer data type but slowly I would include for other data types too.
 int main(void){
     for (int i=0;i<=15;i++){
