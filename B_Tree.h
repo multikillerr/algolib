@@ -53,3 +53,25 @@ void post_order(Leaf* root){
         printf("%d",root->data);
     }
 }
+
+int inorder_predecessor(Leaf* root){
+    if(!root){
+        return NULL;
+    }
+    root=root->left;
+    while(root->right){
+        root=root->right;
+    }
+    return root->data;
+}
+
+int inorder_successor(Leaf* root){
+    if(!root){
+        return NULL;
+    }
+    root=root->right;
+    while(root->left){
+        root=root->left;
+    }
+    return root->data;
+}
